@@ -49,6 +49,8 @@ text-align:center;
 
 export const Search =styled.div`
 grid-area: search;
+padding:  64px  64px  0;
+
 
 
 `;
