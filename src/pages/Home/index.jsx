@@ -1,4 +1,5 @@
 
+
 import { FiPlus, FiSearch } from "react-icons/fi"
 
 import { Container, Brand, Menu, Search, Content, NewNote } from "./styles"
@@ -28,24 +29,26 @@ export function Home() {
         </li>
       </Menu>
       <Search>
-        <Input placeholder='Pesquisar pelo titulo' icon={FiSearch}/>
+        <Input placeholder="Pesquisar pelo titulo" icon={FiSearch} />
       </Search>
       <Content>
         <Section title="Minhas Notas">
-          <Note data = {{
-            title:'React',
-            tags:[
-            {id:'1',name:'React'},
-            {id:'2',name:'NodeJS'}
-            
-            ]
-            
-            }}/>
-
+          <Note
+            data={{
+              title: "React",
+              tags: [
+                { id: "1", name: "React" },
+                { id: "2", name: "NodeJS" },
+                { id: "3", name: "NextJS" },
+                { id: "4", name: "Vite" },
+              ],
+            }}
+          />
         </Section>
       </Content>
-      <NewNote>
-        <FiPlus/>Criar Nota
+      <NewNote to="/new">
+        <FiPlus />
+        Criar Nota
       </NewNote>
     </Container>
   )
